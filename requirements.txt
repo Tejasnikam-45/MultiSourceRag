@@ -14,3 +14,4 @@ datasets>=2.18.0
 pandas>=2.2.1
 wikipedia>=1.4.0
 python-dotenv>=1.0.1
+pypdf>=4.0.0
