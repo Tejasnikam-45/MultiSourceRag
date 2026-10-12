@@ -1,0 +1,15 @@
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("mayurrane/arxiv-metadata-oai-snapshot")
+
+print("Path to dataset files:", path)
+
+
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("thedevastator/the-stanford-question-answering-dataset")
+
+print("Path to dataset files:", path)
+

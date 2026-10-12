@@ -1,0 +1,12 @@
+import wikipedia
+
+pages = [
+    "Retrieval-augmented generation",
+    "Large language model",
+    "Vector database"
+]
+
+for title in pages:
+    page = wikipedia.page(title)
+    with open(f"data/web/{title}.txt", "w") as f:
+        f.write(page.content)
