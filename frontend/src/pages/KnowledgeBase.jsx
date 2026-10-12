@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FileText, Globe, UploadCloud, Link as LinkIcon, AlertCircle, Database } from 'lucide-react';
 
-const API = "http://127.0.0.1:8000";
+const API = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
 
 const SOURCE_COLORS = {
   pdf: { color: "#ef4444", icon: <FileText size={16}/> },
