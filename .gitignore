@@ -23,12 +23,7 @@ __pycache__/
 .coverage
 htmlcov/
 
-# ==============================================================================
-# Vector Database & Local Storage
-# ==============================================================================
-chroma_db/
-*.sqlite3
-*.db
+# Vector Database (included for production deployment)
 
 # ==============================================================================
 # Node.js & Frontend Build Artifacts

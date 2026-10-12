@@ -58,6 +58,12 @@ def get_groq_llm(api_key: str) -> Optional[Groq]:
     return Groq(model="qwen/qwen3.8-27b", api_key=api_key, temperature=0.1, max_tokens=256)
 
 
+try:
+    import torch
+    torch.set_num_threads(1)
+except Exception:
+    pass
+
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 llm_instance = get_groq_llm(GROQ_API_KEY)
 if llm_instance is not None:
